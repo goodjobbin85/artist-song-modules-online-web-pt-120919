@@ -5,7 +5,8 @@ class Artist
   attr_reader :songs
   
   include Paramable
-  extend Memorable::ClassMethods
+  extend Memorable::ClassMethods 
+  include Memorable::InstanceMethods
 
   @@artists = []
 
